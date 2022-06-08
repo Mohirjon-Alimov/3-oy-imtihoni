@@ -1,6 +1,7 @@
 // MASALA 1
-let elBtn = document.querySelector(".masala1");
+let elBtn = document.querySelector(".addNum");
 let error = document.querySelector(".xato");
+let box = document.querySelector(".masala1");
 
 
 elBtn.addEventListener("click", function(e){
@@ -29,6 +30,10 @@ elBtn.addEventListener("click", function(e){
     }
 
     console.log(result(numArr));
+    let resultNum = document.createElement("p");
+    resultNum.textContent = result(numArr);
+    box.appendChild(resultNum);
+    
   }
 
 
